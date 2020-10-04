@@ -1,0 +1,249 @@
+$font: "Open Sans";
+$color1: #ECEFF1;
+$color2: #708598;
+$top-bg: #FAFBFC;
+$color-link: #050F19;
+
+ *{
+     margin: 0;
+     padding: 0;
+}
+ address{
+     font-family: $font;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 12px;
+     line-height: 20px;
+     color: $color2;
+}
+ .logo{
+     width: 221px;
+     height: 48px;
+}
+ .logo img{
+     width: 100%;
+     height: auto;
+}
+ .addr svg, .addr address{
+     display: inline-block;
+}
+ .addr address{
+     position: absolute;
+     left: 20px;
+     top: 1px;
+     width: 155px;
+}
+ .addr{
+     padding-top: 2px;
+     position: relative;
+}
+ .top-head{
+     padding: 5px 0px 4px;
+     background: $top-bg;
+}
+ .container{
+     width: 100%;
+     margin:0 auto;
+     max-width: 1110px;
+     padding: 0 0px;
+}
+ .top-menu{
+}
+ .top-menu ul{
+     padding: 0;
+     margin: 0;
+     list-style: none;
+}
+ .top-menu ul li,.top-menu ul li a{
+     float: left;
+     padding-left: 13px;
+     font-family: $font;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 12px;
+     line-height: 20px;
+     color: $color2;
+}
+ .top-menu ul li a{
+     text-decoration: none;
+}
+ .top-menu ul li a:hover{
+     text-decoration: underline;
+}
+ .flex-top{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+ .flex-head{
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+}
+ header{
+     background: #ffffff;
+     height: 75px;
+     border-top: 1px solid $color1;
+     border-bottom: 1px solid $color1;
+}
+ header .logo{
+     padding-top: 12px;
+}
+ .catalog{
+     margin: 14px 24px 0 23px;
+     position: relative;
+     background: #FED83D;
+     padding: 10px 15px 0;
+     border-radius: 3px;
+     width: 88px;
+     height: 30px;
+}
+ .catalog p{
+     position: absolute;
+     left: 45px;
+     top: 8px;
+     font-family: $font;
+     font-weight: 600;
+     font-style: normal;
+     font-size: 14px;
+     line-height: 24px;
+     color: $color-link;
+}
+ .catalog p a{
+     text-decoration: none;
+     color: $color-link;
+}
+ .catalog p a:hover{
+     text-decoration: underline;
+}
+ .search{
+     position: relative;
+     margin: 9px 4px 0 0px;
+}
+ .search-icon{
+     position: absolute;
+     right: 10px;
+     top: 15px;
+}
+ .search input[type="text"]{
+     width: 474px;
+     border-radius: 4px;
+     border: 1px solid $color1;
+     padding: 7px 36px 7px 14px;
+     font-family: $font;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 14px;
+     line-height: 24px;
+     color: $color2;
+}
+ .list{
+     margin: 14px 24px 0 20px;
+     position: relative;
+     background: $top-bg;
+     padding: 6px 15px 4px;
+     border-radius: 3px;
+     border: 1px solid $color1;
+     width: 79px;
+     height: 28px;
+}
+ .list p{
+     position: absolute;
+     left: 45px;
+     top: 8px;
+     font-family: $font;
+     font-weight: 600;
+     font-style: normal;
+     font-size: 14px;
+     line-height: 24px;
+     color: $color-link;
+}
+ .list p a{
+     text-decoration: none;
+     color: $color-link;
+}
+ .list p a:hover{
+     text-decoration: underline;
+}
+ .userpic{
+     position: relative;
+     top: 7px;
+     background: #9B51E0;
+     color: #fff;
+     width: 40px;
+     height: 40px;
+     text-align: center;
+     vertical-align: middle;
+     border-radius: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+ .userpic span{
+     font-family: $font;
+     font-weight: 600;
+     font-style: normal;
+     font-size: 14px;
+     line-height: 24px;
+     color: #ffffff;
+}
+ #app {
+     height: 100%;
+     margin: 0;
+}
+ #app h2 {
+     margin: 0;
+     font-weight: 100;
+}
+ #app p {
+     margin: 5px 0 30px;
+     color: #999;
+     font-weight: 100;
+     line-height: 24px;
+     font-size: 15px;
+}
+ .autocomplete {
+     position: relative;
+}
+ .autocomplete label {
+     display: block;
+     margin-bottom: 5px;
+     font-size: 14px;
+     font-weight: 100;
+}
+ .autocomplete-input {
+     padding: 7px 10px;
+     width: 93%;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+     outline: none;
+}
+ .autocomplete-input:focus {
+     border-color: #000;
+}
+ .autocomplete-list {
+     position: absolute;
+     z-index: 2;
+     overflow: auto;
+     min-width: 250px;
+     max-height: 150px;
+     margin: 0;
+     margin-top: 5px;
+     padding: 0;
+     border: 1px solid #eee;
+     list-style: none;
+     border-radius: 4px;
+     background-color: #fff;
+     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+ .autocomplete-list li {
+     margin: 0;
+     padding: 8px 15px;
+     border-bottom: 1px solid #f5f5f5;
+}
+ .autocomplete-list li:last-child {
+     border-bottom: 0;
+}
+ .autocomplete-list li:hover, .autocomplete-list li.active {
+     background-color: #f5f5f5;
+}
